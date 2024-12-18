@@ -1,0 +1,39 @@
+.custom-tabs .nav-link {
+    border: none;
+    color: grey;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.custom-tabs .nav-link.active {
+    color: black;
+    font-weight: bold;
+    border: none;
+}
+
+.custom-tabs .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: grey;
+    display: none;
+}
+
+.custom-tabs .nav-link.active::after {
+    display: block;
+}
+
+.custom-tabs .nav-link span {
+    margin-top: 5px;
+}
+
+.custom-tabs .nav-link i {
+    font-size: 12px;
+}
